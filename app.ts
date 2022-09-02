@@ -1,8 +1,25 @@
-let message:string = 'Hello, Typescript!';
+let message: string = 'Hello, Typescript!';
 
-// create a new heading 1 element
-let heading = document.createElement('h1');
-heading.textContent = message;
+let value: number = 10;
 
-// add the heading in the document
-document.body.appendChild(heading);
+let arr: number[];
+arr = [1,2,3];
+arr.push(4);
+
+let person: {
+    name: string
+    age: number
+}
+
+person = {
+    name: 'Sakis',
+    age: 34
+}
+
+let greeting : (name: string) => string;
+
+greeting = function(name: string) {
+    return 'Hi '+name+'!';
+}
+
+console.log(greeting('Sakis'));
